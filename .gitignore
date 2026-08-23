@@ -1,0 +1,45 @@
+**/.DS_Store
+**/planning.md
+lesson-4-prompt-refinement/demos/demo3-evals/eval_responses.jsonl
+demo_guides/*
+scripts/*
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+.venv/
+venv/
+pip-wheel-metadata/
+*.log
+
+# --- AWS CLI / SDK / Agent ---
+.aws/
+*.pem
+*.key
+*.crt
+*.der
+*.csr
+*.tfstate
+*.tfstate.*
+.terraform/
+.aws-sam/
+.aws-cache/
+.aws-agent/
+
+# --- Ignore everything except YAML ---
+# Ignore all files
+
+# But keep YAML files
+!*.yaml
+!*.yml
+
+# --- Optional: Keep specific Python scripts if needed ---
+#!main.py
