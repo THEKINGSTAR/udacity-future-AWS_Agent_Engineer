@@ -641,6 +641,18 @@ Use this project rubric to understand and assess the project criteria.
 - Use structured output to ensure that the classifier node only produces valid values.
 
 ---
+## AI Assistance Disclosure
+
+This project was developed by `Khaled Mohamed Fathallah`.
+
+`OpenAI GPT` was used as an `AI development assistant`, primarily to help
+`translate` and `formulate` `technical requirements` into `clear English prompts`,
+`refine system prompts`, reason about` AWS/AgentCore` implementation details,
+and `assist with debugging`.
+
+All architectural decisions, implementation choices, testing, validation,
+and final submitted work were reviewed and performed by the author.
+---
 
 ## License
 
