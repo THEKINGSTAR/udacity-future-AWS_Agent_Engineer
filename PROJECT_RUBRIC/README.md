@@ -192,15 +192,15 @@ The AgentCore Gateway sends the tool arguments directly as the Lambda event — 
 }
 ```
 
-![Creating a test event in the Lambda console](./figs/image.png)
+![Creating a test event in the Lambda console](./README_figs/image.png)
 
 Click **Test**. You should see a successful response containing a `ticketId` and `"status": "OPEN"`.
 
-![Successful Lambda test result](./figs/image-1.png)
+![Successful Lambda test result](./README_figs/image-1.png)
 
 To confirm the record was written, go to the DynamoDB console, open the `bug-report-tool-stack-bug-reports` table, and click **Explore table items**. You should see one item with the ticket ID from the response.
 
-![Bug report record created in DynamoDB](./figs/image-2.png)
+![Bug report record created in DynamoDB](./README_figs/image-2.png)
 
 > **TROUBLESHOOTING**  
 > If the test fails with `AccessDeniedException`, check that the IAM policy is attached to the correct execution role. If it fails with `ResourceNotFoundException`, verify that the Lambda's `TABLE_NAME` environment variable matches `bug-report-tool-stack-bug-reports`. The Lambda also prints every event it receives to CloudWatch Logs (`/aws/lambda/bug-report-tool-stack-create-bug-report`) — the ground truth for what actually reached it.
@@ -343,7 +343,7 @@ Open `harness-tests.json` and add the prompts you want to test your application 
 }
 ```
 
-![An example harness-tests.json covering all three routes](./figs/image-3.png)
+![An example harness-tests.json covering all three routes](./README_figs/image-3.png)
 
 Fill in the three fields for every test case:
 
@@ -388,7 +388,7 @@ python -c "import boto3; print(boto3.__version__)"
 
 This should print `1.43.76` (or newer) without any errors — the Bedrock AgentCore APIs require boto3 1.43+.
 
-![Verifying the Python environment](./figs/image-4.png)
+![Verifying the Python environment](./README_figs/image-4.png)
 
 ### 3. Run the Test Script
 
@@ -402,11 +402,11 @@ python generate-eval-dataset.py --tests-json harness-tests.json
 
 If you see an error about a missing harness ARN, run `create_harness.py` first — it records the ARN in `agentcore_config.json`.
 
-![Running the test script](./figs/image-5.png)
+![Running the test script](./README_figs/image-5.png)
 
 When the script finishes, check the output file (`output_eval_dataset.jsonl`). The terminal output lists one `wrote eval line` message per test case.
 
-![Inspecting the eval dataset](./figs/image-6.png)
+![Inspecting the eval dataset](./README_figs/image-6.png)
 
 Each line of `output_eval_dataset.jsonl` is a JSON object with this structure:
 
@@ -516,7 +516,7 @@ To view results in the console, go to Amazon Bedrock → **Evaluations** in the 
 
 Once the job completes, click on it to see the results.
 
-![Evaluation results page showing scores](./figs/image-7.png)
+![Evaluation results page showing scores](./README_figs/image-7.png)
 
 Look for patterns in the scores:
 
