@@ -1,0 +1,67 @@
+{
+    "Items": [
+        {
+            "environment": {
+                "S": "Chrome 120 on macOS Sonoma"
+            },
+            "createdAt": {
+                "S": "2026-08-29T21:42:10.844380+00:00"
+            },
+            "description": {
+                "S": "The checkout page crashes when I click the Pay button"
+            },
+            "stepsToReproduce": {
+                "S": "1. Add an item to the cart. 2. Go to checkout. 3. Click Pay."
+            },
+            "ticketId": {
+                "S": "f57ca23f-41e3-41ca-8a3d-2d8720fb51e9"
+            },
+            "status": {
+                "S": "OPEN"
+            }
+        },
+        {
+            "environment": {
+                "S": "Chrome on Windows 11"
+            },
+            "createdAt": {
+                "S": "2026-08-29T22:04:12.686223+00:00"
+            },
+            "description": {
+                "S": "The user reported having an issue with one of the products that was on sale (as of 2026-08-29)."
+            },
+            "stepsToReproduce": {
+                "S": "Log in and click submit on the dashboard."
+            },
+            "ticketId": {
+                "S": "6892af6d-9a10-43a9-b459-9cebeadc0ac6"
+            },
+            "status": {
+                "S": "OPEN"
+            }
+        },
+        {
+            "environment": {
+                "S": "Chrome on Windows 11"
+            },
+            "createdAt": {
+                "S": "2026-08-29T22:15:19.899464+00:00"
+            },
+            "description": {
+                "S": "the dashboard is blank."
+            },
+            "stepsToReproduce": {
+                "S": "login and click dashboard."
+            },
+            "ticketId": {
+                "S": "72c13d09-cd21-4594-a35b-16a4ca2e14b2"
+            },
+            "status": {
+                "S": "OPEN"
+            }
+        }
+    ],
+    "Count": 3,
+    "ScannedCount": 3,
+    "ConsumedCapacity": null
+}

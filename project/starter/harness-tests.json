@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "id": "t1_bug_report",
+      "prompt": "Hi, I am trying to checkout but the application keeps crashing. I am using Safari on my iPhone.",
+      "expected": "The assistant should classify this as a BUG REPORT. It should acknowledge the crash and ask the customer for the missing 'stepsToReproduce' field. It must not call the tool yet."
+    },
+    {
+      "id": "t2_platform_question",
+      "prompt": "How many days do I have to return a product after it is delivered?",
+      "expected": "The assistant should classify this as a PLATFORM QUESTION and answer based solely on the FAQ document's return policy."
+    },
+    {
+      "id": "t3_other_request",
+      "prompt": "Is your company willing to sponsor our university's robotics team?",
+      "expected": "The assistant should classify this as an OTHER request and politely redirect the customer to the human support line at 1-800-555-0199."
+    }
+  ]
+}
