@@ -1,0 +1,2 @@
+Evaluation Observations
+The Bedrock Evaluation job completed with a Correctness score of [1]. The LLM-as-a-judge successfully validated that the agent strictly followed the routing logic. For the bug report path, the agent correctly identified missing parameters and requested them rather than hallucinating or immediately executing the tool. For out-of-scope requests, the agent reliably triggered the human hand-off protocol without attempting to answer from external knowledge.
